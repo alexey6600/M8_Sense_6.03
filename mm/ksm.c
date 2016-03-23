@@ -199,10 +199,10 @@ static unsigned long ksm_pages_unshared;
 static unsigned long ksm_rmap_items;
 
 /* Number of pages ksmd should scan in one batch */
-static unsigned int ksm_thread_pages_to_scan = 250;
+static unsigned int ksm_thread_pages_to_scan = 100;
 
 /* Milliseconds ksmd should sleep between batches */
-static unsigned int ksm_thread_sleep_millisecs = 1500;
+static unsigned int ksm_thread_sleep_millisecs = 1000;
 
 #ifdef CONFIG_KSM_HTC_POLICY
 /* Enable htc scan strategy. */
